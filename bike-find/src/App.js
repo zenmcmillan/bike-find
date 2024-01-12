@@ -33,22 +33,32 @@ function App() {
   return (
     <main className="App">
       <section className="header">
+        <div className="home-container">
+          <NavLink to="/" className="home">Home</NavLink>
+        </div>
+
         <div className="title-container">
           <h1>BikeFind NYC</h1>
         </div>
         <div className="saved-locations-container">
-            <NavLink to="/saved-locations" className="saved-locations">
-              Saved Locations
-            </NavLink>
+          <NavLink to="/saved-locations" className="saved-locations">
+            Saved Locations
+          </NavLink>
         </div>
       </section>
+
       <img className="dumbo-image" src={dumboImage} alt="Dumbo Image"></img>
       <Routes>
-        <Route path="/" element={<LocationsContainer locations={locations} error={error}/>} />
+        <Route
+          path="/"
+          element={<LocationsContainer locations={locations} error={error} />}
+        />
         <Route path="/saved-locations" element={<SavedLocations />} />
-        <Route path="/:id" element={<LocationDetails />}  />
+        <Route
+          path="/:id"
+          element={<LocationDetails locations={locations} />}
+        />
       </Routes>
-      
     </main>
   );
 }

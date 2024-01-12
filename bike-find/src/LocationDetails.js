@@ -2,8 +2,9 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 
 export default function LocationDetails({extra}) {
-  // const place = useParams().id
-  // console.log(useParams())
+  const place = useParams().id
+  console.log(useParams())
+  console.log({extra})
 
   return (
     <div>

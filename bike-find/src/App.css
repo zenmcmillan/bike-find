@@ -20,27 +20,42 @@
   height: 6em;
   font-family: 'M PLUS Rounded 1c', sans-serif;
    color: white;
+   
 } 
 
 .title-container {
   display: flex;
   margin-top: 0.3em;
-  justify-content: flex-end;
-  width: 60%;
-  font-size: 1.6em;
+  justify-content: center;
+  width: 50%;
+  font-size: 1.6em; 
 }
 
 .saved-locations-container {
-  padding-left: 16%;
+  display: flex;
   padding-top: 4.3%;
-  width: 20%;
+  width: 25%;
   font-size: 0.8em;
 }
 
 .saved-locations {
   color: white;
+  font-size: 1.9em;
+  font-weight: 400;
+}
+
+.home-container {
+  width: 25%;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+  color: white;
   font-size: 1.6em;
   font-weight: 400;
+  
 }
 
 .saved-locations:hover {
@@ -53,6 +68,8 @@
   margin-top: -6.36%;
   width: 100vw;
 }
+
+
 
 
 
