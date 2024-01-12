@@ -3,6 +3,8 @@ import './App.css';
 import { useState, useEffect } from 'react';
 import { getAddresses } from './apiCalls';
 import LocationsContainer from './LocationsContainer';
+import SavedLocations from './SavedLocations'
+import LocationDetails from './LocationDetails';
 import dumboImage from './Dumbo.jpg.webp';
 import {Routes, Route, NavLink} from 'react-router-dom';
 
@@ -41,7 +43,12 @@ function App() {
         </div>
       </section>
       <img className="dumbo-image" src={dumboImage} alt="Dumbo Image"></img>
-      <LocationsContainer locations={locations} error={error} />
+      <Routes>
+        <Route path="/" element={<LocationsContainer locations={locations} error={error}/>} />
+        <Route path="/saved-locations" element={<SavedLocations />} />
+        <Route path="/:id" element={<LocationDetails />}  />
+      </Routes>
+      
     </main>
   );
 }
