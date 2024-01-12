@@ -32,9 +32,15 @@
 
 .saved-locations-container {
   padding-left: 16%;
-  padding-top: 3.5%;
+  padding-top: 4.3%;
   width: 20%;
   font-size: 0.8em;
+}
+
+.saved-locations {
+  color: white;
+  font-size: 1.6em;
+  font-weight: 400;
 }
 
 .saved-locations:hover {

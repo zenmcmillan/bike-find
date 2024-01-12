@@ -30,13 +30,14 @@ function App() {
 
   return (
     <main className="App">
-      {/* <Header /> */}
       <section className="header">
         <div className="title-container">
           <h1>BikeFind NYC</h1>
         </div>
         <div className="saved-locations-container">
-          <h2 className="saved-locations">Saved Locations</h2>
+            <NavLink to="/saved-locations" className="saved-locations">
+              Saved Locations
+            </NavLink>
         </div>
       </section>
       <img className="dumbo-image" src={dumboImage} alt="Dumbo Image"></img>
