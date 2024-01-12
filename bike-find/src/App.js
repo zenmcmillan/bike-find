@@ -2,7 +2,7 @@ import './App.css';
 import Header from './Header.js';
 import { useState, useEffect } from 'react';
 import { getAddresses } from './apiCalls';
-import LocationsContainer from './LocationsContainer'
+import LocationsContainer from './LocationsContainer';
 
 function App() {
   const [locations, setLocations] = useState([]);

@@ -2,31 +2,23 @@ import React from "react";
 import './LocationsContainer.css';
 import Card from "./Card";
 
-export default function LocationsContainer({locations, error}) {
-  const addresses = locations.map(address => {
+export default function LocationsContainer({locations}) {
+  const addresses = locations.map(element => {
 
     const extra = {
-      address: address.address,
-      ebikes: address.ebikes,
-      has_ebikes: address.has_ebikes,
-      postal_code: address.postal_code,
-      slots: address.slots,
+      address: element.extra.address,
+      postalCode: element.extra.address
     }
 
     return (
-      <Card
-      emptySlots={address.empty_slots} 
+      <Card 
       extra={extra}
-      freeBike={address.free_bike}
-      id={address.id}
-      key={address.id}
+      id={element.id}
+      key={element.id}
       />
     )
   })
   return (
-    <section className="card-container">
-      <h1>Locations</h1>
-      <div>{addresses}</div>
-    </section>
+    <section className="card-container">{addresses}</section>
   )
 }
