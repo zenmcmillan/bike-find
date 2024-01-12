@@ -19,6 +19,9 @@ export default function LocationsContainer({locations}) {
     )
   })
   return (
-    <section className="card-container">{addresses}</section>
-  )
+    <section className="locations-container">
+      <h1 className="locations-title">Locations</h1>
+      <div className="card-container">{addresses}</div>
+    </section>
+  );
 }

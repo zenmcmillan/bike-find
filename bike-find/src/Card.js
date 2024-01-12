@@ -1,9 +1,10 @@
 import React from "react";
+import './Card.css';
 
-export default function Card({extra, timestamp, postalCode, id}) {
+export default function Card({extra}) {
   return (
     <div className="card">
-      <h3>{extra.address}</h3>
+      <h3 className="address">{extra.address}</h3>
     </div>
   )
 }
