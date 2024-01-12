@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  overflow-y: hidden;
 }
 
 .App-logo {
@@ -36,3 +37,12 @@
     transform: rotate(360deg);
   }
 }
+
+.dumbo-image {
+  clip-path: polygon(0 11%, 100% 11%, 100% 65%, 0% 65%);
+  margin-top: -6.35%;
+  width: 100vw;
+}
+
+
+

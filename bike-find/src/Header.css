@@ -1,13 +1,10 @@
-* {
-   font-family: 'M PLUS Rounded 1c', sans-serif;
-   color: white;
-}
-
 .header {
   display: flex;
   background-color: purple;
   height: 6em;
-}
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+   color: white;
+} 
 
 .title-container {
   display: flex;
@@ -27,4 +24,4 @@
 .saved-locations:hover {
   cursor: pointer;
   text-decoration: underline;
-}
+} 
