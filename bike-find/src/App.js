@@ -3,6 +3,7 @@ import Header from './Header.js';
 import { useState, useEffect } from 'react';
 import { getAddresses } from './apiCalls';
 import LocationsContainer from './LocationsContainer';
+import dumboImage from './Dumbo.jpg.webp'
 
 function App() {
   const [locations, setLocations] = useState([]);
@@ -29,6 +30,7 @@ function App() {
   return (
     <main className="App">
       <Header />
+      <img className="dumbo-image" src={dumboImage} alt="Dumbo Image"></img>
      <LocationsContainer locations={locations} error={error}/>
     </main>
   );

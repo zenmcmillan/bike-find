@@ -1,3 +1,11 @@
+.locations-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -20%;
+}
+
 .locations-title {
   font-size: 1.8em;
   margin-bottom: .1em;
@@ -7,5 +15,7 @@
   padding: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+  grid-gap: 2.5em;
+  justify-content: center;
+  align-items: center;
 }
