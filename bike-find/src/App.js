@@ -1,9 +1,10 @@
 import './App.css';
-import Header from './Header.js';
+// import Header from './Header.js';
 import { useState, useEffect } from 'react';
 import { getAddresses } from './apiCalls';
 import LocationsContainer from './LocationsContainer';
-import dumboImage from './Dumbo.jpg.webp'
+import dumboImage from './Dumbo.jpg.webp';
+import {Routes, Route, NavLink} from 'react-router-dom';
 
 function App() {
   const [locations, setLocations] = useState([]);
@@ -29,9 +30,17 @@ function App() {
 
   return (
     <main className="App">
-      <Header />
+      {/* <Header /> */}
+      <section className="header">
+        <div className="title-container">
+          <h1>BikeFind NYC</h1>
+        </div>
+        <div className="saved-locations-container">
+          <h2 className="saved-locations">Saved Locations</h2>
+        </div>
+      </section>
       <img className="dumbo-image" src={dumboImage} alt="Dumbo Image"></img>
-     <LocationsContainer locations={locations} error={error}/>
+      <LocationsContainer locations={locations} error={error} />
     </main>
   );
 }
