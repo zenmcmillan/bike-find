@@ -15,7 +15,7 @@ function App() {
   const fetchAddresses = () => {
     getAddresses()
     .then((data) => {
-      let addresses = data.network.stations.map(element => element.extra.address)
+      let addresses = data.network.stations.map(element => element)
       setLocations(addresses)
       console.log(addresses)
     })
