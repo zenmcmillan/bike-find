@@ -5,15 +5,18 @@ import SavedLocationsCard from './SavedLocationsCard';
 
 export default function SavedLocations({savedLocations}) {
 
-  const savedPlaces = savedLocations.map(places => {
+  const addresses = savedLocations.map(location => {
     return (
-        <SavedLocationsCard savedPlaces={places.extra.address} />
-    )
+      <Link to={`/${location.id}`} key={location.id}>
+        <SavedLocationsCard addresses={location.extra.address} />
+      </Link>
+    );
   })
+  
   return (
     <section>
      <h1>Saved Locations</h1>
-     <div className="card-container">{savedPlaces}</div>
+     <div className="card-container">{addresses}</div>
     </section>
   );
 }

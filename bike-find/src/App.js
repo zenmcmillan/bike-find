@@ -5,6 +5,7 @@ import { getAddresses } from './apiCalls';
 import LocationsContainer from './LocationsContainer';
 import SavedLocations from './SavedLocations'
 import LocationDetails from './LocationDetails';
+import SavedLocationsCard from './SavedLocationsCard';
 import dumboImage from './Dumbo.jpg.webp';
 import {Routes, Route, NavLink, useNavigate} from 'react-router-dom';
 
@@ -69,6 +70,7 @@ function App() {
         <Route path="/" element={<LocationsContainer locations={locations} error={error} />}/>
         <Route path="/saved-locations" element={<SavedLocations savedLocations={savedLocations}/>} />
         <Route path="/:id" element={<LocationDetails locations={locations} saveLocation={saveLocation}/>}/>
+        <Route path="/saved-locations/:id" element={<SavedLocationsCard />}/>
       </Routes>
     </main>
   );

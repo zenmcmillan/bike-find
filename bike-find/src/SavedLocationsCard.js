@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function SavedLocations({savedPlaces}) {
+export default function SavedLocations({addresses}) {
   return (
     <div className="card">
-      <p>{savedPlaces}</p>
+      <p>{addresses}</p>
     </div>
   )
 }
