@@ -6,11 +6,12 @@ import LocationsContainer from './LocationsContainer';
 import SavedLocations from './SavedLocations'
 import LocationDetails from './LocationDetails';
 import dumboImage from './Dumbo.jpg.webp';
-import {Routes, Route, NavLink} from 'react-router-dom';
+import {Routes, Route, NavLink, useNavigate} from 'react-router-dom';
 
 function App() {
   const [locations, setLocations] = useState([]);
-  const [error, setError] = useState("")
+  const [error, setError] = useState("");
+  const navigate = useNavigate()
 
   useEffect(() => {
     fetchAddresses()
@@ -28,15 +29,18 @@ function App() {
     })
   }
 
+  const onHomePage = window.location.pathname === '/';
+   
   console.log(locations)
 
   return (
     <main className="App">
       <section className="header">
         <div className="home-container">
-          <NavLink to="/" className="home">Home</NavLink>
+          <NavLink to="/" className="home">
+            Home
+          </NavLink>
         </div>
-
         <div className="title-container">
           <h1>BikeFind NYC</h1>
         </div>
@@ -47,7 +51,10 @@ function App() {
         </div>
       </section>
 
-      <img className="dumbo-image" src={dumboImage} alt="Dumbo Image"></img>
+      {onHomePage && (
+        <img className="dumbo-image" src={dumboImage} alt="Washington Street in DUMBO New York City" />
+      )}
+
       <Routes>
         <Route
           path="/"
