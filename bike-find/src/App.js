@@ -67,7 +67,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<LocationsContainer locations={locations} error={error} />}/>
-        <Route path="/saved-locations" element={<SavedLocations />} />
+        <Route path="/saved-locations" element={<SavedLocations savedLocations={savedLocations}/>} />
         <Route path="/:id" element={<LocationDetails locations={locations} saveLocation={saveLocation}/>}/>
       </Routes>
     </main>
