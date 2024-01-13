@@ -1,8 +1,11 @@
 import React from "react";
+import  { Link } from "react-router-dom";
 import './LocationsContainer.css';
-import Card from "./Card";
+import LocationDetails from "./LocationDetails";
+import Card from './Card'
 
 export default function LocationsContainer({locations}) {
+  
   const addresses = locations.map(element => {
 
     const extra = {
@@ -11,13 +14,12 @@ export default function LocationsContainer({locations}) {
     }
 
     return (
-      <Card 
-      extra={extra}
-      id={element.id}
-      key={element.id}
-      />
-    )
+      <Link to={`/${element.id}`} key={element.id} >
+        <Card extra={extra} id={element.id} key={element.id} />
+      </Link>
+    );
   })
+
   return (
     <section className="locations-container">
       <h1 className="locations-title">Locations</h1>
