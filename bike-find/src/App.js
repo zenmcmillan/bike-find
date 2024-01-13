@@ -10,28 +10,34 @@ import {Routes, Route, NavLink, useNavigate} from 'react-router-dom';
 
 function App() {
   const [locations, setLocations] = useState([]);
+  const [savedLocations, setSavedLocation] = useState([]);
   const [error, setError] = useState("");
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
-  useEffect(() => {
-    fetchAddresses()
-  }, [])
-
-  const fetchAddresses = () => {
-    getAddresses()
-    .then((data) => {
-      let addresses = data.network.stations.map(element => element)
-      setLocations(addresses)
-      console.log(addresses)
-    })
-    .catch((error) => {
-      setError(error.message)
-    })
+  const saveLocation = (location) => {
+    setSavedLocation([...savedLocations, location])
   }
+  console.log("SAVE LOCATIONS", savedLocations)
 
   const onHomePage = window.location.pathname === '/';
    
   console.log(locations)
+
+  useEffect(() => {
+    fetchAddresses();
+  }, []);
+
+  const fetchAddresses = () => {
+    getAddresses()
+      .then((data) => {
+        let addresses = data.network.stations.map((element) => element);
+        setLocations(addresses);
+        console.log(addresses);
+      })
+      .catch((error) => {
+        setError(error.message);
+      });
+  };
 
   return (
     <main className="App">
@@ -52,19 +58,17 @@ function App() {
       </section>
 
       {onHomePage && (
-        <img className="dumbo-image" src={dumboImage} alt="Washington Street in DUMBO New York City" />
+        <img
+          className="dumbo-image"
+          src={dumboImage}
+          alt="Washington Street in DUMBO New York City"
+        />
       )}
 
       <Routes>
-        <Route
-          path="/"
-          element={<LocationsContainer locations={locations} error={error} />}
-        />
+        <Route path="/" element={<LocationsContainer locations={locations} error={error} />}/>
         <Route path="/saved-locations" element={<SavedLocations />} />
-        <Route
-          path="/:id"
-          element={<LocationDetails locations={locations} />}
-        />
+        <Route path="/:id" element={<LocationDetails locations={locations} saveLocation={saveLocation}/>}/>
       </Routes>
     </main>
   );

@@ -4,7 +4,7 @@ import './LocationsContainer.css';
 import LocationDetails from "./LocationDetails";
 import Card from './Card'
 
-export default function LocationsContainer({locations}) {
+export default function LocationsContainer({locations,}) {
   
   const addresses = locations.map(element => {
 
