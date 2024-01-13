@@ -1,5 +1,4 @@
 import './App.css';
-// import Header from './Header.js';
 import { useState, useEffect } from 'react';
 import { getAddresses } from './apiCalls';
 import LocationsContainer from './LocationsContainer';
@@ -16,9 +15,12 @@ function App() {
   const navigate = useNavigate();
 
   const saveLocation = (location) => {
-    setSavedLocation([...savedLocations, location])
+    if (!savedLocations.some((savedLocation) => savedLocation.id === location.id)) {
+      setSavedLocation([...savedLocations, location]);
+    }
   }
-  console.log("SAVE LOCATIONS", savedLocations)
+
+  console.log("SAVED LOCATIONS", savedLocations)
 
   const onHomePage = window.location.pathname === '/';
    
@@ -67,10 +69,29 @@ function App() {
       )}
 
       <Routes>
-        <Route path="/" element={<LocationsContainer locations={locations} error={error} />}/>
-        <Route path="/saved-locations" element={<SavedLocations savedLocations={savedLocations}/>} />
-        <Route path="/:id" element={<LocationDetails locations={locations} saveLocation={saveLocation}/>}/>
-        <Route path="/saved-locations/:id" element={<SavedLocationsCard />}/>
+        <Route
+          path="/"
+          element={<LocationsContainer locations={locations} error={error} />}
+        />
+        <Route
+          path="/saved-locations"
+          element={
+            <SavedLocations
+              savedLocations={savedLocations}
+              saveLocation={saveLocation}
+            />
+          }
+        />
+        <Route
+          path="/:id"
+          element={
+            <LocationDetails
+              locations={locations}
+              saveLocation={saveLocation}
+            />
+          }
+        />
+        <Route path="/saved-locations/:id" element={<SavedLocationsCard />} />
       </Routes>
     </main>
   );
