@@ -11,10 +11,13 @@ export default function SavedLocations({savedLocations}) {
   let theAddresses = savedLocations.map(location => {
 
       return (
-        <div key={location.id}>
-          <NavLink to={`/${location.id}`} key={location.id} className="card">
-           {location.extra.address}
+        <div className="saved-locations-card" key={location.id}>
+          <NavLink to={`/${location.id}`} key={location.id}>
+            <p>{location.extra.address}</p>
           </NavLink>
+          <div className='delete-button-container'>
+            <button className="delete-button">✖️</button>
+          </div>
           <SavedLocationsCard addresses={location.extra.address} />
         </div>
       );

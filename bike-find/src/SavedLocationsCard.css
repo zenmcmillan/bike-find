@@ -3,12 +3,10 @@
   outline: 2px solid red;
 } 
 
- 
-
-/* .delete-button {
+.delete-button {
   display: flex;
   flex-direction: column;
-} */
+}
 
  
 
