@@ -39,21 +39,25 @@ export default function LocationDetails({locations, saveLocation}) {
 }
 
 LocationDetails.propTypes = {
-  empty_slots: PropTypes.number.isRequired,
-  extra: PropTypes.shape({
-    address: PropTypes.string.isRequired,
-    ebikes: PropTypes.number.isRequired,
-    has_ebikes: PropTypes.bool.isRequired,
-    postal_code: PropTypes.string.isRequired,
-    slots: PropTypes.number.isRequired,
-    ui: PropTypes.number.isRequired,
-  }).isRequired,
-  free_bikes: PropTypes.number.isRequired,
-  id: PropTypes.string.isRequired,
-  latitude: PropTypes.number.isRequired,
-  longitude: PropTypes.number.isRequired,
-  name: PropTypes.string.isRequired,
-  saved: PropTypes.bool.isRequired,
-  timestamp: PropTypes.number.isRequired,
+  locations: PropTypes.arrayOf(
+    PropTypes.shape({
+      empty_slots: PropTypes.number.isRequired,
+      extra: PropTypes.shape({
+        address: PropTypes.string.isRequired,
+        ebikes: PropTypes.number.isRequired,
+        has_ebikes: PropTypes.bool.isRequired,
+        postal_code: PropTypes.string.isRequired,
+        slots: PropTypes.number.isRequired,
+        ui: PropTypes.number.isRequired,
+      }).isRequired,
+      free_bikes: PropTypes.number.isRequired,
+      id: PropTypes.string.isRequired,
+      latitude: PropTypes.number.isRequired,
+      longitude: PropTypes.number.isRequired,
+      name: PropTypes.string.isRequired,
+      saved: PropTypes.bool.isRequired,
+      timestamp: PropTypes.number.isRequired,
+    })
+  ).isRequired,
   saveLocation: PropTypes.func.isRequired,
 };
