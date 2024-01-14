@@ -14,6 +14,11 @@ function App() {
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
+  const deleteCard = (id) => {
+    const filteredCards = savedLocations.filter(card => card.id !== id)
+    setSavedLocation(filteredCards)
+  }
+
   const saveLocation = (location) => {
     if (!savedLocations.some((savedLocation) => savedLocation.id === location.id)) {
       setSavedLocation([...savedLocations, location]);
@@ -79,6 +84,7 @@ function App() {
             <SavedLocations
               savedLocations={savedLocations}
               saveLocation={saveLocation}
+              deleteCard={deleteCard}
             />
           }
         />

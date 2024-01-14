@@ -3,20 +3,20 @@ import { NavLink, Link } from 'react-router-dom';
 import './SavedLocations.css';
 import SavedLocationsCard from './SavedLocationsCard';
 
-export default function SavedLocations({savedLocations}) {
+export default function SavedLocations({savedLocations, deleteCard}) {
 
     if (!savedLocations.length) {
       return <div> You haven't saved any locations</div>
     }
   let theAddresses = savedLocations.map(location => {
-
+    let id = location.id
       return (
         <div className="saved-locations-card" key={location.id}>
           <NavLink to={`/${location.id}`} key={location.id}>
             <p>{location.extra.address}</p>
           </NavLink>
           <div className='delete-button-container'>
-            <button className="delete-button">✖️</button>
+            <button className="delete-button" onClick={() => deleteCard(id)}>✖️</button>
           </div>
           <SavedLocationsCard addresses={location.extra.address} />
         </div>
