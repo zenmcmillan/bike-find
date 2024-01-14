@@ -18,14 +18,14 @@ function App() {
     const filteredCards = savedLocations.filter(card => card.id !== id)
     setSavedLocations(filteredCards)
   }
-  
+
   const saveLocation = (location) => {
     if (!savedLocations.some((savedLocation) => savedLocation.id === location.id)) {
+      location.saved = true
       setSavedLocations([...savedLocations, location]);
     }
 
   }
-
 
   const onHomePage = window.location.pathname === '/';
 
