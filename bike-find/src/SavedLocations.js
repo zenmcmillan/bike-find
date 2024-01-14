@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import './SavedLocations.css';
-import SavedLocationsCard from './SavedLocationsCard';
 import PropTypes from 'prop-types';
 
 export default function SavedLocations({savedLocations, deleteCard}) {
@@ -22,7 +21,6 @@ export default function SavedLocations({savedLocations, deleteCard}) {
           <div className='delete-button-container'>
             <button className="delete-button" onClick={() => deleteCard(id)}>✖️</button>
           </div>
-          <SavedLocationsCard addresses={location.extra.address} />
         </div>
       );
   })

@@ -1,7 +1,6 @@
 import React from "react";
 import  { Link } from "react-router-dom";
 import './LocationsContainer.css';
-import LocationDetails from "./LocationDetails";
 import Card from './Card';
 import PropTypes from 'prop-types'
 
