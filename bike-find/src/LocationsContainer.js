@@ -39,7 +39,7 @@ LocationsContainer.propTypes = {
         has_ebikes: PropTypes.bool.isRequired,
         postal_code: PropTypes.string.isRequired,
         slots: PropTypes.number.isRequired,
-        ui: PropTypes.number.isRequired,
+        uid: PropTypes.number.isRequired
       }).isRequired,
       free_bikes: PropTypes.number.isRequired,
       id: PropTypes.string.isRequired,
@@ -47,7 +47,7 @@ LocationsContainer.propTypes = {
       longitude: PropTypes.number.isRequired,
       name: PropTypes.string.isRequired,
       saved: PropTypes.bool.isRequired,
-      timestamp: PropTypes.number.isRequired,
+      timestamp: PropTypes.string.isRequired,
     })
   ).isRequired,
 };
