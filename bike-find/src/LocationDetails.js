@@ -15,8 +15,22 @@ export default function LocationDetails({locations, saveLocation}) {
         <p>Zip Code: {place.extra.postal_code}</p>
         <p>Empty Slots: {place.empty_slots}</p>
         <p>Available Bikes: {place.free_bikes}</p>
-        {place.saved ? <button className="save-location-button" onClick={() => saveLocation(place)}>Saved</button> :
-        <button className="save-location-button" onClick={() => saveLocation(place)}>Save Location</button>}
+        {place.saved ? (
+          <button
+            className="save-location-button"
+            style={{ backgroundColor: "green" }}
+            onClick={() => saveLocation(place)}
+          >
+            Saved <a className="checkmark">✔</a>
+          </button>
+        ) : (
+          <button
+            className="save-location-button"
+            onClick={() => saveLocation(place)}
+          >
+            Save Location
+          </button>
+        )}
       </div>
     </section>
   );

@@ -15,6 +15,8 @@ function App() {
   const navigate = useNavigate();
 
   const deleteCard = (id) => {
+    const duplicate = savedLocations.find( card => card.id === id);
+    duplicate.saved = false;
     const filteredCards = savedLocations.filter(card => card.id !== id)
     setSavedLocations(filteredCards)
   }
