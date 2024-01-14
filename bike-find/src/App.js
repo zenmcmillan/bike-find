@@ -43,11 +43,17 @@ function App() {
         setLocations(locations);
       })
       .catch((error) => {
-        setError(error.message);
+        if (!Response.ok) {
+           setError(
+             "There is an error with the server. Please try again later!"
+           );
+        }
       });
+     
   };
 
   console.log("SAVED LOCATIONS", savedLocations)
+
 
   return (
     <main className="App">
@@ -66,6 +72,8 @@ function App() {
           </NavLink>
         </div>
       </section>
+
+      
 
       {onHomePage && (
         <img
