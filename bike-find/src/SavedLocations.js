@@ -6,7 +6,7 @@ import SavedLocationsCard from './SavedLocationsCard';
 export default function SavedLocations({savedLocations, deleteCard}) {
 
     if (!savedLocations.length) {
-      return <div> You haven't saved any locations</div>
+      return <h2> You haven't saved any locations</h2>
     }
   let theAddresses = savedLocations.map(location => {
     let id = location.id

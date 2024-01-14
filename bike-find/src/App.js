@@ -10,26 +10,28 @@ import {Routes, Route, NavLink, useNavigate} from 'react-router-dom';
 
 function App() {
   const [locations, setLocations] = useState([]);
-  const [savedLocations, setSavedLocation] = useState([]);
+  const [savedLocations, setSavedLocations] = useState([]);
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
+  const AddSavedKey = () => {
+    const locations = savedLocations.map(obj => ({...obj, saved: false}))
+    setSavedLocations(locations)
+  }
+
   const deleteCard = (id) => {
     const filteredCards = savedLocations.filter(card => card.id !== id)
-    setSavedLocation(filteredCards)
+    setSavedLocations(filteredCards)
   }
 
   const saveLocation = (location) => {
     if (!savedLocations.some((savedLocation) => savedLocation.id === location.id)) {
-      setSavedLocation([...savedLocations, location]);
+      AddSavedKey()
+      setSavedLocations([...savedLocations, location]);
     }
   }
 
-  console.log("SAVED LOCATIONS", savedLocations)
-
   const onHomePage = window.location.pathname === '/';
-   
-  console.log(locations)
 
   useEffect(() => {
     fetchAddresses();
@@ -40,12 +42,13 @@ function App() {
       .then((data) => {
         let addresses = data.network.stations.map((element) => element);
         setLocations(addresses);
-        console.log(addresses);
       })
       .catch((error) => {
         setError(error.message);
       });
   };
+
+  console.log("SAVED LOCATIONS", savedLocations)
 
   return (
     <main className="App">
@@ -65,13 +68,7 @@ function App() {
         </div>
       </section>
 
-      {onHomePage && (
-        <img
-          className="dumbo-image"
-          src={dumboImage}
-          alt="Washington Street in DUMBO New York City"
-        />
-      )}
+      {onHomePage && (<img className="dumbo-image" src={dumboImage} alt="Washington Street in DUMBO New York City"/>)}
 
       <Routes>
         <Route

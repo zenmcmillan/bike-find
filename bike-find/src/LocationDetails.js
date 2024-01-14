@@ -4,11 +4,8 @@ import './LocationDetails.css';
 
 export default function LocationDetails({locations, saveLocation}) {
   const id = useParams().id
-  console.log("LOCATIONS", locations)
 
  const place = locations.find((element) => element.id === id);
- console.log("PLACE",place)
-
 
  if (place) {
   return (
