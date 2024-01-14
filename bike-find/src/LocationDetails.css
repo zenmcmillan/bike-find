@@ -9,6 +9,7 @@
   width: 55%;
   height: 15em;
   line-height: 1.5em;
+   
 }
 
 .save-location-button {
@@ -16,8 +17,16 @@
   color: white;
   background-color: purple;
   height: 2em;
-  width: 12em;
+  width: 11em;
   border: 0;
   border-radius: 1em;
   font-weight: 600;
+}
+
+.save-location-button:hover {
+  cursor: pointer;
+}
+
+.checkmark {
+  margin-left: 0.5em;
 }
