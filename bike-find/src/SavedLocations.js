@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import './SavedLocations.css';
 import SavedLocationsCard from './SavedLocationsCard';
 
@@ -11,16 +11,20 @@ export default function SavedLocations({savedLocations}) {
   let theAddresses = savedLocations.map(location => {
 
       return (
-      <Link to={`/${location.id}`} key={location.id}>
-        <SavedLocationsCard addresses={location.extra.address} />
-      </Link>
-    );
+        <div key={location.id}>
+          <NavLink to={`/${location.id}`} key={location.id} className="card">
+           {location.extra.address}
+          </NavLink>
+          <SavedLocationsCard addresses={location.extra.address} />
+        </div>
+      );
   })
 
   return (
     <section>
-     <h1>Saved Locations</h1>
-     <div className="card-container">{theAddresses}</div>
+      <h1>Saved Locations</h1>
+      <div className="card-container">{theAddresses}</div>
     </section>
   );
 }
+

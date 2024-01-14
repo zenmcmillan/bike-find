@@ -1,0 +1,18 @@
+ .button-container {
+  display: flex;
+  outline: 2px solid red;
+} 
+
+ 
+
+/* .delete-button {
+  display: flex;
+  flex-direction: column;
+} */
+
+ 
+
+/* .saved-card {
+  display: flex;
+  flex-direction: column;
+} */
