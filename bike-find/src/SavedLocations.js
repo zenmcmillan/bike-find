@@ -4,7 +4,8 @@ import './SavedLocations.css';
 import SavedLocationsCard from './SavedLocationsCard';
 
 export default function SavedLocations({savedLocations, deleteCard}) {
-
+  
+ console.log("SAVED LOCATIONS", savedLocations);
     if (!savedLocations.length) {
       return <h2> You haven't saved any locations</h2>
     }

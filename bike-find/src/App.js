@@ -14,22 +14,18 @@ function App() {
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
-  const AddSavedKey = () => {
-    const locations = savedLocations.map(obj => ({...obj, saved: false}))
-    setSavedLocations(locations)
-  }
-
   const deleteCard = (id) => {
     const filteredCards = savedLocations.filter(card => card.id !== id)
     setSavedLocations(filteredCards)
   }
-
+  
   const saveLocation = (location) => {
     if (!savedLocations.some((savedLocation) => savedLocation.id === location.id)) {
-      AddSavedKey()
       setSavedLocations([...savedLocations, location]);
     }
+
   }
+
 
   const onHomePage = window.location.pathname === '/';
 
@@ -41,7 +37,8 @@ function App() {
     getAddresses()
       .then((data) => {
         let addresses = data.network.stations.map((element) => element);
-        setLocations(addresses);
+        let locations = addresses.map((obj) => ({ ...obj, saved: false }));
+        setLocations(locations);
       })
       .catch((error) => {
         setError(error.message);
