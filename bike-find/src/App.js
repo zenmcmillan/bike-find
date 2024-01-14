@@ -4,7 +4,7 @@ import { getAddresses } from './apiCalls';
 import LocationsContainer from './LocationsContainer';
 import SavedLocations from './SavedLocations'
 import LocationDetails from './LocationDetails';
-import SavedLocationsCard from './SavedLocationsCard';
+import NotFound from './NotFoundPage';
 import dumboImage from './Dumbo.jpg.webp';
 import {Routes, Route, NavLink, useNavigate} from 'react-router-dom';
 
@@ -67,7 +67,13 @@ function App() {
         </div>
       </section>
 
-      {onHomePage && (<img className="dumbo-image" src={dumboImage} alt="Washington Street in DUMBO New York City"/>)}
+      {onHomePage && (
+        <img
+          className="dumbo-image"
+          src={dumboImage}
+          alt="Washington Street in DUMBO New York City"
+        />
+      )}
 
       <Routes>
         <Route
@@ -79,7 +85,6 @@ function App() {
           element={
             <SavedLocations
               savedLocations={savedLocations}
-              saveLocation={saveLocation}
               deleteCard={deleteCard}
             />
           }
@@ -93,7 +98,7 @@ function App() {
             />
           }
         />
-        <Route path="/saved-locations/:id" element={<SavedLocationsCard />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </main>
   );

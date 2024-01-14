@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import './LocationDetails.css';
+import PropTypes from 'prop-types';
 
 export default function LocationDetails({locations, saveLocation}) {
   const id = useParams().id
@@ -37,3 +38,26 @@ export default function LocationDetails({locations, saveLocation}) {
  }
 }
 
+LocationDetails.propTypes = {
+  locations: PropTypes.arrayOf(
+    PropTypes.shape({
+      empty_slots: PropTypes.number.isRequired,
+      extra: PropTypes.shape({
+        address: PropTypes.string.isRequired,
+        ebikes: PropTypes.number.isRequired,
+        has_ebikes: PropTypes.bool.isRequired,
+        postal_code: PropTypes.string.isRequired,
+        slots: PropTypes.number.isRequired,
+        uid: PropTypes.number.isRequired,
+      }).isRequired,
+      free_bikes: PropTypes.number.isRequired,
+      id: PropTypes.string.isRequired,
+      latitude: PropTypes.number.isRequired,
+      longitude: PropTypes.number.isRequired,
+      name: PropTypes.string.isRequired,
+      saved: PropTypes.bool.isRequired,
+      timestamp: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+  saveLocation: PropTypes.func.isRequired,
+};
