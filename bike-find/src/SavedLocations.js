@@ -28,7 +28,7 @@ export default function SavedLocations({savedLocations, deleteCard}) {
   return (
     <section>
       <h1>Saved Locations</h1>
-      <div className="card-container">{theAddresses}</div>
+      <div className="saved-card-container">{theAddresses}</div>
     </section>
   );
 }

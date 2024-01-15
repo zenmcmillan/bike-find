@@ -26,3 +26,23 @@
   font-size: 1.5em;
 }
 
+@media screen and (max-width: 1024px) {
+ 
+  .saved-card-container {
+  padding: 20px;
+  display: grid;
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 2.5em;
+  justify-content: center;
+  align-items: center;
+}
+
+.saved-locations-card {
+  font-size: 1em;
+  width: 16em;
+  padding: 4px;
+}
+  
+}
