@@ -73,8 +73,6 @@ function App() {
         </div>
       </section>
 
-      
-
       {onHomePage && (
         <img
           className="dumbo-image"

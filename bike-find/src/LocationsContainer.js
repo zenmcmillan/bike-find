@@ -4,9 +4,9 @@ import './LocationsContainer.css';
 import Card from './Card';
 import PropTypes from 'prop-types'
 
-export default function LocationsContainer({locations, error}) {
+export default function LocationsContainer({locations}) {
   console.log("LOCATIONS", locations)
-  console.log("ERROR", error)
+  
   const addresses = locations.map(element => {
 
     const extra = {
@@ -51,7 +51,6 @@ LocationsContainer.propTypes = {
       timestamp: PropTypes.string.isRequired,
     })
   ).isRequired,
-  error: PropTypes.string.isRequired
 };
 
 
