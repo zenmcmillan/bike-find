@@ -46,4 +46,19 @@ describe('template spec', () => {
     cy.get(".saved-card-container").children().should("have.length", 1);
 
   })
+  it('Should take user to a specific page when there is a 404 error', () => {
+    cy.visit("http://localhost:3000/nonsense/nonsense");
+
+    cy.get("h1").contains("Error 404")
+    cy.get("h2").contains("Page cannot be found")
+  })
+  it ("should inform user when there is a 500 level error", () => {
+    
+     cy.intercept("GET", "http://api.citybik.es/v2/networks/joco-new-york", {
+       statusCode: 500,
+       fixture: "testData.json",
+     });
+     cy.visit("http://localhost:3000/");
+     cy.get('.error').contains("There is an error with the server. Please try again later!")
+  })
 })
