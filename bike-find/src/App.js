@@ -4,6 +4,7 @@ import { getAddresses } from './apiCalls';
 import LocationsContainer from './LocationsContainer';
 import SavedLocations from './SavedLocations'
 import LocationDetails from './LocationDetails';
+import NotFound from './NotFoundPage';
 import dumboImage from './Dumbo.jpg.webp';
 import {Routes, Route, NavLink, useNavigate} from 'react-router-dom';
 
@@ -42,11 +43,17 @@ function App() {
         setLocations(locations);
       })
       .catch((error) => {
-        setError(error.message);
+        if (!Response.ok) {
+           setError(
+             "There is an error with the server. Please try again later!"
+           );
+        }
       });
+     
   };
 
   console.log("SAVED LOCATIONS", savedLocations)
+
 
   return (
     <main className="App">
@@ -66,7 +73,13 @@ function App() {
         </div>
       </section>
 
-      {onHomePage && (<img className="dumbo-image" src={dumboImage} alt="Washington Street in DUMBO New York City"/>)}
+      {onHomePage && (
+        <img
+          className="dumbo-image"
+          src={dumboImage}
+          alt="Washington Street in DUMBO New York City"
+        />
+      )}
 
       <Routes>
         <Route
@@ -91,6 +104,7 @@ function App() {
             />
           }
         />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </main>
   );

@@ -6,6 +6,7 @@ import PropTypes from 'prop-types'
 
 export default function LocationsContainer({locations}) {
   console.log("LOCATIONS", locations)
+  
   const addresses = locations.map(element => {
 
     const extra = {
@@ -15,7 +16,7 @@ export default function LocationsContainer({locations}) {
 
     return (
       <Link to={`/${element.id}`} key={element.id} >
-        <Card extra={extra} id={element.id} key={element.id} />
+        <Card extra={extra} id={element.id} key={element.id} error={error}/>
       </Link>
     );
   })
@@ -23,6 +24,7 @@ export default function LocationsContainer({locations}) {
   return (
     <section className="locations-container">
       <h1 className="locations-title">Locations</h1>
+      {!addresses.length && <h2 className="error">{error}</h2>}
       <div className="card-container">{addresses}</div>
     </section>
   );
