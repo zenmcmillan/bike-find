@@ -64,7 +64,7 @@ function App() {
           </NavLink>
         </div>
         <div className="title-container">
-          <h1>BikeFind NYC</h1>
+          <h1 className="home-title">BikeFind NYC</h1>
         </div>
         <div className="saved-locations-container">
           <NavLink to="/saved-locations" className="saved-locations">
