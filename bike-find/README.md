@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Bike Find
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Abstract
 
-## Available Scripts
+Application uses an API to fetch information about e-bike locations in New York City. The user can click a location on the home page and be taken to another page with more details. They can save that address if they want and view it by clicking the Saved Locations button. They can also delete the address if they want as well.
 
-In the project directory, you can run:
+### Application link:
 
-### `npm start`
+[Bike Find](https://github.com/zenmcmillan/bike-find)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Installation Instructions: 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. In your terminal run `git clone git@github.com:zenmcmillan/bike-find.git`
+2. Run `cd bike-find`
+3. Run `npm install`. It will take a few seconds to finish
+4. Run `npm start` and you should see the application in the browser
 
-### `npm test`
+### Preview of App:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Bike Find](Bike-Find.gif)
 
-### `npm run build`
+### Context:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This is the final project for the Front End Engineering Progam at the Turing School of Software & Design. It took 4 days to complete this project
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Contributors
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[Zen McMillan](https://github.com/zenmcmillan)
 
-### `npm run eject`
+### Learning Goals:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* Demonstrate foundational knowledge in:  
+\- React  
+\- Router   
+\- Asynchronous JavaScript   
+\- End to end testing with Cypress   
+\- Responsive Design   
+\- Error handling  
+\- User Experience
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Wins & Challenges:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* Working with Router was a challenge for me. On the Saved Locations page the delete button was originally a route along with the address so figuring out how to seperate those was an challenge for me. The problem was solved once I searched through the docs and realized I needed to wrap the address within a Link.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* Another challenge was figuring out how to keep track of the saved locations within the app state.  I figured out the problem by adding an object key of saved with an initial value of false. It would change to true when the Save Location button was clicked and back to false when the delete button was clicked. This was done right after the data was fetched since my attempt to do it in a separate function only added more unneccessary code and led to other side effects.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
