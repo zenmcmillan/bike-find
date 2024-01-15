@@ -23,3 +23,17 @@
 .error {
   color: red;
 }
+
+@media screen and (max-width: 1024px) {
+
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2em;
+  }
+
+  .card {
+    font-size: 0.6em;
+
+  }
+}
+
