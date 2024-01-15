@@ -1,0 +1,697 @@
+{
+  "network": {
+    "company": ["BEAM BIKE CORP.", "JOCO"],
+    "ebikes": true,
+    "href": "/v2/networks/joco-new-york",
+    "id": "joco-new-york",
+    "location": {
+      "city": "New York",
+      "country": "US",
+      "latitude": 40.7572,
+      "longitude": -73.9859
+    },
+    "name": "JOCO New York",
+    "stations": [
+      {
+        "empty_slots": 15,
+        "extra": {
+          "address": "350 East 52nd Street, New York, NY 10022",
+          "ebikes": 1,
+          "has_ebikes": true,
+          "postal_code": "10022",
+          "slots": 16,
+          "uid": 1
+        },
+        "free_bikes": 1,
+        "id": "398711c3f19caf634b76568bf6aa0a48",
+        "latitude": 40.755226,
+        "longitude": -73.965826,
+        "name": "Icon Pkg: E 52 St, 1st Ave & 2nd Ave",
+        "timestamp": "2024-01-11T23:43:22.811000Z"
+      },
+      {
+        "empty_slots": 8,
+        "extra": {
+          "address": "143 W 40th Street",
+          "ebikes": 0,
+          "has_ebikes": true,
+          "postal_code": "10018",
+          "slots": 8,
+          "uid": 2
+        },
+        "free_bikes": 0,
+        "id": "9e98e03039b00ea98d135238de07dfcb",
+        "latitude": 40.754682,
+        "longitude": -73.987303,
+        "name": "Icon Pkg: W 40 St, Broadway & 7th Ave",
+        "timestamp": "2024-01-11T23:43:22.848000Z"
+      },
+      {
+        "empty_slots": 7,
+        "extra": {
+          "address": "175 West 90th Street, New York, NY 10024",
+          "ebikes": 0,
+          "has_ebikes": true,
+          "postal_code": "10024",
+          "slots": 7,
+          "uid": 3
+        },
+        "free_bikes": 0,
+        "id": "79b8779f9bd0a73e58d160884b959f4c",
+        "latitude": 40.79014,
+        "longitude": -73.97265,
+        "name": "Icon Pkg: W 90 St, Amsterdam & Col.",
+        "timestamp": "2024-01-11T23:43:22.850000Z"
+      },
+      {
+        "empty_slots": 12,
+        "extra": {
+          "address": "554 West 29th Street, New York, NY 10001",
+          "ebikes": 1,
+          "has_ebikes": true,
+          "postal_code": "10001",
+          "slots": 13,
+          "uid": 4
+        },
+        "free_bikes": 1,
+        "id": "b7e7ce5b78e4a150a80f95d2c4e979bf",
+        "latitude": 40.752384,
+        "longitude": -74.00396,
+        "name": "Icon Pkg: W 29 St, 11th Ave & 10th Ave",
+        "timestamp": "2024-01-11T23:43:22.852000Z"
+      },
+      {
+        "empty_slots": 19,
+        "extra": {
+          "address": "240 East 27th Street, New York, NY 10016",
+          "ebikes": 1,
+          "has_ebikes": true,
+          "postal_code": "10016",
+          "slots": 20,
+          "uid": 5
+        },
+        "free_bikes": 1,
+        "id": "837fce3b47cf298f9f0a2369c576973e",
+        "latitude": 40.740531,
+        "longitude": -73.979577,
+        "name": "Icon Pkg: E 27 St, 2nd Ave & 3rd Ave",
+        "timestamp": "2024-01-11T23:43:22.860000Z"
+      },
+      {
+        "empty_slots": 13,
+        "extra": {
+          "address": "101 East 13th Street, New York, NY 10003",
+          "ebikes": 1,
+          "has_ebikes": true,
+          "postal_code": "10003",
+          "slots": 14,
+          "uid": 6
+        },
+        "free_bikes": 1,
+        "id": "6e0f8b5b0f980f4ff9c8ed14a2adf538",
+        "latitude": 40.733486,
+        "longitude": -73.989565,
+        "name": "Icon Pkg: E 13 St, 4th Ave & 3rd Ave",
+        "timestamp": "2024-01-11T23:43:22.861000Z"
+      },
+      {
+        "empty_slots": 8,
+        "extra": {
+          "address": "375 King Street, New York, NY 10014",
+          "ebikes": 0,
+          "has_ebikes": true,
+          "postal_code": "10014",
+          "slots": 8,
+          "uid": 7
+        },
+        "free_bikes": 0,
+        "id": "5bdd22620ee779bfbc811daf719dec85",
+        "latitude": 40.728319,
+        "longitude": -74.008412,
+        "name": "Icon Pkg: King Street & Greenwich St",
+        "timestamp": "2024-01-11T23:43:22.862000Z"
+      },
+      {
+        "empty_slots": 13,
+        "extra": {
+          "address": "28 West 97th Street, New York, NY 10025",
+          "ebikes": 1,
+          "has_ebikes": true,
+          "postal_code": "10025",
+          "slots": 14,
+          "uid": 8
+        },
+        "free_bikes": 1,
+        "id": "42f4789aa09c866e7dd041d344d3d3f3",
+        "latitude": 40.792596,
+        "longitude": -73.965278,
+        "name": "Icon Pkg: W 97 St, Cntrl Park W & Col.",
+        "timestamp": "2024-01-11T23:43:22.863000Z"
+      },
+      {
+        "empty_slots": 9,
+        "extra": {
+          "address": "400 e 81st Street",
+          "ebikes": 1,
+          "has_ebikes": true,
+          "postal_code": " 10028",
+          "slots": 10,
+          "uid": 9
+        },
+        "free_bikes": 1,
+        "id": "a6a3a77ec151a12c28e71269063600e9",
+        "latitude": 40.773513,
+        "longitude": -73.951505,
+        "name": "Quik Park: 81 St, 1st & York",
+        "timestamp": "2024-01-11T23:43:22.872000Z"
+      },
+      {
+        "empty_slots": 2,
+        "extra": {
+          "address": "444 E 12th St",
+          "ebikes": 0,
+          "has_ebikes": true,
+          "postal_code": "10002",
+          "slots": 2,
+          "uid": 10
+        },
+        "free_bikes": 0,
+        "id": "46e070c8ceaab5d94b32703d8b9fd4fe",
+        "latitude": 40.729135,
+        "longitude": -73.981695,
+        "name": "JOCO X Grubhub Concierge",
+        "timestamp": "2024-01-11T23:43:22.874000Z"
+      },
+      {
+        "empty_slots": 21,
+        "extra": {
+          "address": "285 West 64th Street, New York, NY 10023",
+          "ebikes": 0,
+          "has_ebikes": true,
+          "postal_code": "10023",
+          "slots": 21,
+          "uid": 11
+        },
+        "free_bikes": 0,
+        "id": "435f869da24f82fab75b0aa440a6b946",
+        "latitude": 40.774623,
+        "longitude": -73.987749,
+        "name": "Icon Pkg: W 64 St, Ams. & West E.",
+        "timestamp": "2024-01-11T23:43:22.876000Z"
+      },
+      {
+        "empty_slots": 10,
+        "extra": {
+          "address": "315 E 102nd Street",
+          "ebikes": 0,
+          "has_ebikes": true,
+          "postal_code": "10029",
+          "slots": 10,
+          "uid": 13
+        },
+        "free_bikes": 0,
+        "id": "109d422a237a3d4052d3f068ad15122f",
+        "latitude": 40.787629,
+        "longitude": -73.943185,
+        "name": "Icon Pkg: E 102 St, 1st Ave & 2nd Ave",
+        "timestamp": "2024-01-11T23:43:22.878000Z"
+      },
+      {
+        "empty_slots": 14,
+        "extra": {
+          "address": "404 W 37th Street, New York NY, 10018",
+          "ebikes": 0,
+          "has_ebikes": true,
+          "postal_code": "10018",
+          "slots": 14,
+          "uid": 14
+        },
+        "free_bikes": 0,
+        "id": "0bc8f316ea911495bed7bdf51bf01a11",
+        "latitude": 40.755487,
+        "longitude": -73.995436,
+        "name": "Icon Pkg: W 37 St, 9th & 10th Ave",
+        "timestamp": "2024-01-11T23:43:22.879000Z"
+      },
+      {
+        "empty_slots": 11,
+        "extra": {
+          "address": "222 e 58th street New York, NY, 10022",
+          "ebikes": 1,
+          "has_ebikes": true,
+          "postal_code": "10022",
+          "slots": 12,
+          "uid": 15
+        },
+        "free_bikes": 1,
+        "id": "056336b5f70b90abffbd340889bd5aef",
+        "latitude": 40.7604,
+        "longitude": -73.965873,
+        "name": "Centerpark: E 58th St, 3rd ave & 2nd Ave",
+        "timestamp": "2024-01-11T23:43:22.880000Z"
+      },
+      {
+        "empty_slots": 14,
+        "extra": {
+          "address": "57 West 53rd Street, New York, NY 10019",
+          "ebikes": 2,
+          "has_ebikes": true,
+          "postal_code": "10019",
+          "slots": 16,
+          "uid": 16
+        },
+        "free_bikes": 2,
+        "id": "1f40c70c5a37d20b09270bef485a6d87",
+        "latitude": 40.761701,
+        "longitude": -73.978517,
+        "name": "Icon Pkg: W 53 St, 6th Ave & 5th Ave",
+        "timestamp": "2024-01-11T23:43:22.881000Z"
+      },
+      {
+        "empty_slots": 15,
+        "extra": {
+          "address": "58 West 58th Street, New York, NY 10019",
+          "ebikes": 0,
+          "has_ebikes": true,
+          "postal_code": "10019",
+          "slots": 15,
+          "uid": 17
+        },
+        "free_bikes": 0,
+        "id": "954dd30311bd405289c597ce5a92f70d",
+        "latitude": 40.764649,
+        "longitude": -73.975994,
+        "name": "Centerpark: W 58 St, 6th Ave & 5th Ave",
+        "timestamp": "2024-01-11T23:43:22.881000Z"
+      },
+      {
+        "empty_slots": 10,
+        "extra": {
+          "address": "176 E 32nd St, New York, NY 10016",
+          "ebikes": 0,
+          "has_ebikes": true,
+          "postal_code": "10016",
+          "slots": 10,
+          "uid": 18
+        },
+        "free_bikes": 0,
+        "id": "ff29449e101c0340bf80190bdd0ca396",
+        "latitude": 40.744356,
+        "longitude": -73.979517,
+        "name": "Icon Pkg: E 32 St, Lexington & 3rd Ave",
+        "timestamp": "2024-01-11T23:43:22.882000Z"
+      },
+      {
+        "empty_slots": 14,
+        "extra": {
+          "address": "12-14 E 107th Street, New York, NY, 10029",
+          "ebikes": 0,
+          "has_ebikes": true,
+          "postal_code": "10029",
+          "slots": 14,
+          "uid": 19
+        },
+        "free_bikes": 0,
+        "id": "c02844aef4348ad51c80244d7ccd68e2",
+        "latitude": 40.794416,
+        "longitude": -73.949501,
+        "name": "Icon Pkg: E. 107 St, Madison & 5th",
+        "timestamp": "2024-01-11T23:43:22.883000Z"
+      },
+      {
+        "empty_slots": 10,
+        "extra": {
+          "address": "223 East 53rd Street, New York, NY 10022",
+          "ebikes": 0,
+          "has_ebikes": true,
+          "postal_code": "10022",
+          "slots": 10,
+          "uid": 20
+        },
+        "free_bikes": 0,
+        "id": "f729ab9d5639005955cab01787bfcce4",
+        "latitude": 40.757385,
+        "longitude": -73.968405,
+        "name": "Icon Pkg: E 53 St, 3rd Ave & 2nd Ave",
+        "timestamp": "2024-01-11T23:43:22.884000Z"
+      },
+      {
+        "empty_slots": 24,
+        "extra": {
+          "address": "212 East 19th Street, New York, NY 10003",
+          "ebikes": 0,
+          "has_ebikes": true,
+          "postal_code": "10003",
+          "slots": 24,
+          "uid": 21
+        },
+        "free_bikes": 0,
+        "id": "d3c0717b691d4f146c19bf667c0d64ad",
+        "latitude": 40.73603,
+        "longitude": -73.98444,
+        "name": "Icon Pkg: E 19 St, 3rd Ave & 2nd Ave",
+        "timestamp": "2024-01-11T23:43:22.888000Z"
+      },
+      {
+        "empty_slots": 11,
+        "extra": {
+          "address": "101 w 23rd street",
+          "ebikes": 0,
+          "has_ebikes": true,
+          "postal_code": "10011",
+          "slots": 11,
+          "uid": 22
+        },
+        "free_bikes": 0,
+        "id": "b47231705ebc8e5948936b5c6a06356e",
+        "latitude": 40.74316,
+        "longitude": -73.99321,
+        "name": "Laz Pkg: W 23 St, 6th & 7th Ave",
+        "timestamp": "2024-01-11T23:43:22.889000Z"
+      },
+      {
+        "empty_slots": 20,
+        "extra": {
+          "address": "215 East 95th Street, New York, NY 10028",
+          "ebikes": 0,
+          "has_ebikes": true,
+          "postal_code": "1008",
+          "slots": 20,
+          "uid": 23
+        },
+        "free_bikes": 0,
+        "id": "972ee199e4e6926aacf2f8b730f2da51",
+        "latitude": 40.783987,
+        "longitude": -73.948337,
+        "name": "Icon Pkg: E 95 St, 2nd Ave & 3rd Ave",
+        "timestamp": "2024-01-11T23:43:22.890000Z"
+      },
+      {
+        "empty_slots": 8,
+        "extra": {
+          "address": "5 East 22nd Street, New York, NY 10010",
+          "ebikes": 1,
+          "has_ebikes": true,
+          "postal_code": "10010",
+          "slots": 9,
+          "uid": 24
+        },
+        "free_bikes": 1,
+        "id": "969da61e92633bd0db1371324eb3019b",
+        "latitude": 40.740575,
+        "longitude": -73.989059,
+        "name": "Icon Pkg: E 22 St, Broadway & Pk Ave S",
+        "timestamp": "2024-01-11T23:43:22.891000Z"
+      },
+      {
+        "empty_slots": 12,
+        "extra": {
+          "address": "43-08 Crescent St",
+          "ebikes": 2,
+          "has_ebikes": true,
+          "postal_code": "11101",
+          "slots": 14,
+          "uid": 25
+        },
+        "free_bikes": 2,
+        "id": "0f5860d108a9a6edc5ce3c767161da9e",
+        "latitude": 40.748667,
+        "longitude": -73.943409,
+        "name": "Quik Park 24th st, 43rd ave & 44th rd",
+        "timestamp": "2024-01-11T23:43:22.894000Z"
+      },
+      {
+        "empty_slots": 16,
+        "extra": {
+          "address": "205 E 63rd St",
+          "ebikes": 0,
+          "has_ebikes": true,
+          "postal_code": "10065",
+          "slots": 16,
+          "uid": 26
+        },
+        "free_bikes": 0,
+        "id": "185925b4eb7ec27731423a9ebbef436c",
+        "latitude": 40.764204,
+        "longitude": -73.964273,
+        "name": "Icon Pkg: E 63rd st, 3rd Ave & 2nd Ave",
+        "timestamp": "2024-01-11T23:43:22.895000Z"
+      },
+      {
+        "empty_slots": 13,
+        "extra": {
+          "address": "249-253 West 43rd Street, New York, NY 10036",
+          "ebikes": 1,
+          "has_ebikes": true,
+          "postal_code": "10036",
+          "slots": 14,
+          "uid": 27
+        },
+        "free_bikes": 1,
+        "id": "dcc69887c25ce8f56a18f028b14e7470",
+        "latitude": 40.757649,
+        "longitude": -73.988307,
+        "name": "Icon Pkg: W 43 St, 8th Ave & 7th Ave",
+        "timestamp": "2024-01-11T23:43:22.895000Z"
+      },
+      {
+        "empty_slots": 14,
+        "extra": {
+          "address": "225 West 83rd Street, New York, NY 10024",
+          "ebikes": 0,
+          "has_ebikes": true,
+          "postal_code": "10024",
+          "slots": 14,
+          "uid": 28
+        },
+        "free_bikes": 0,
+        "id": "e2ff3dd22d7661619bf5e25259c7fd92",
+        "latitude": 40.78615,
+        "longitude": -73.9772,
+        "name": "Icon Pkg: W 83 St, Broadway & Ams.",
+        "timestamp": "2024-01-11T23:43:22.901000Z"
+      },
+      {
+        "empty_slots": 7,
+        "extra": {
+          "address": "580 E 88th St, New York, NY 10128",
+          "ebikes": 1,
+          "has_ebikes": true,
+          "postal_code": "10128",
+          "slots": 8,
+          "uid": 29
+        },
+        "free_bikes": 1,
+        "id": "895cda3d476928d2d7c976d508df627c",
+        "latitude": 40.776415,
+        "longitude": -73.944402,
+        "name": "Icon Pkg: E 88 St, York & East End",
+        "timestamp": "2024-01-11T23:43:22.902000Z"
+      },
+      {
+        "empty_slots": 8,
+        "extra": {
+          "address": "279 E 65th St, NY, NY 10065",
+          "ebikes": 1,
+          "has_ebikes": true,
+          "postal_code": "10065",
+          "slots": 9,
+          "uid": 31
+        },
+        "free_bikes": 1,
+        "id": "0e16549e1c339c3a51a03aa85c7e86b0",
+        "latitude": 40.764579,
+        "longitude": -73.962026,
+        "name": "Icon Pkg: E 65 st, 2nd Ave & 3rd Ave",
+        "timestamp": "2024-01-11T23:43:22.904000Z"
+      },
+      {
+        "empty_slots": 2,
+        "extra": {
+          "address": "605 w 51st street, NY, NY",
+          "ebikes": 0,
+          "has_ebikes": true,
+          "postal_code": "10019",
+          "slots": 2,
+          "uid": 32
+        },
+        "free_bikes": 0,
+        "id": "a95bedce49a89b02e9c4bfd6e2f40a8d",
+        "latitude": 40.766666,
+        "longitude": -73.994336,
+        "name": "West-Side JOCO Concierge",
+        "timestamp": "2024-01-11T23:43:22.904000Z"
+      },
+      {
+        "empty_slots": 16,
+        "extra": {
+          "address": "308 Greenwich St, New York, NY 10013",
+          "ebikes": 0,
+          "has_ebikes": true,
+          "postal_code": "10013",
+          "slots": 16,
+          "uid": 33
+        },
+        "free_bikes": 0,
+        "id": "852c74d8d67872d409fdf426ff31ddee",
+        "latitude": 40.717883,
+        "longitude": -74.010589,
+        "name": "Icon Pkg: Greenwich St, Jay Street & Duane",
+        "timestamp": "2024-01-11T23:43:22.905000Z"
+      },
+      {
+        "empty_slots": 8,
+        "extra": {
+          "address": "435 West 57th Street, New York, NY 10019",
+          "ebikes": 0,
+          "has_ebikes": true,
+          "postal_code": "10019",
+          "slots": 8,
+          "uid": 34
+        },
+        "free_bikes": 0,
+        "id": "6c06b9dd36e42660a18d84bf2a657a98",
+        "latitude": 40.7688,
+        "longitude": -73.987441,
+        "name": "Icon Pkg: W 57 St, 10th Ave & 9th Ave",
+        "timestamp": "2024-01-11T23:43:22.906000Z"
+      },
+      {
+        "empty_slots": 12,
+        "extra": {
+          "address": "157 Leroy St",
+          "ebikes": 0,
+          "has_ebikes": true,
+          "postal_code": "10003",
+          "slots": 12,
+          "uid": 35
+        },
+        "free_bikes": 0,
+        "id": "14bf090a0f90293978b902c0308ea93b",
+        "latitude": 40.730648,
+        "longitude": -74.009532,
+        "name": "Quik Park: Leroy st, West & Washington",
+        "timestamp": "2024-01-11T23:43:22.914000Z"
+      },
+      {
+        "empty_slots": 8,
+        "extra": {
+          "address": "166 East 51st Street , New York, NY 10022",
+          "ebikes": 0,
+          "has_ebikes": true,
+          "postal_code": "10022",
+          "slots": 8,
+          "uid": 36
+        },
+        "free_bikes": 0,
+        "id": "e60e06504bee1e7487d3dab9d4181c2d",
+        "latitude": 40.756566,
+        "longitude": -73.971063,
+        "name": "Icon Pkg: E 51 St, 3rd Ave & Lexington",
+        "timestamp": "2024-01-11T23:43:22.915000Z"
+      },
+      {
+        "empty_slots": 10,
+        "extra": {
+          "address": "200-210 West 71st Street, New York, NY 10023",
+          "ebikes": 0,
+          "has_ebikes": true,
+          "postal_code": "10023",
+          "slots": 10,
+          "uid": 37
+        },
+        "free_bikes": 0,
+        "id": "c783ff6ff65e6d6849503f2b61ac0185",
+        "latitude": 40.77808,
+        "longitude": -73.9826,
+        "name": "Icon Pkg: W 71 St, Broadway & West E.",
+        "timestamp": "2024-01-11T23:43:22.916000Z"
+      },
+      {
+        "empty_slots": 7,
+        "extra": {
+          "address": "39 Exchange Pl, New York, NY 10005",
+          "ebikes": 1,
+          "has_ebikes": true,
+          "postal_code": "10005",
+          "slots": 8,
+          "uid": 38
+        },
+        "free_bikes": 1,
+        "id": "25d9c565a15353dafca961bc3de9d9c3",
+        "latitude": 40.705924,
+        "longitude": -74.010036,
+        "name": "Icon pkg: exchange pl, William & broad",
+        "timestamp": "2024-01-11T23:43:22.917000Z"
+      },
+      {
+        "empty_slots": 6,
+        "extra": {
+          "address": "305-307 West 14th Street, New York, NY 10011",
+          "ebikes": 2,
+          "has_ebikes": true,
+          "postal_code": "10011",
+          "slots": 8,
+          "uid": 39
+        },
+        "free_bikes": 2,
+        "id": "0dc042e27083e8f46b5917bb07b8c77f",
+        "latitude": 40.740122,
+        "longitude": -74.003068,
+        "name": "Icon Pkg: W 14 St, 8th Ave & 9th Ave",
+        "timestamp": "2024-01-11T23:43:22.917000Z"
+      },
+      {
+        "empty_slots": 10,
+        "extra": {
+          "address": "161-163 W 36th St, New York, NY 10018",
+          "ebikes": 2,
+          "has_ebikes": true,
+          "postal_code": "10018",
+          "slots": 12,
+          "uid": 40
+        },
+        "free_bikes": 2,
+        "id": "53eead4b2952e89c793ed84cbb44d76b",
+        "latitude": 40.7521,
+        "longitude": -73.989015,
+        "name": "Icon Pkg: W 36 St, 7th Ave & Broadway",
+        "timestamp": "2024-01-11T23:43:22.918000Z"
+      },
+      {
+        "empty_slots": 12,
+        "extra": {
+          "address": "25 Albany St, New York, NY 10006",
+          "ebikes": 0,
+          "has_ebikes": true,
+          "postal_code": "10006",
+          "slots": 12,
+          "uid": 30
+        },
+        "free_bikes": 0,
+        "id": "007e3b297e926b954004859343678f49",
+        "latitude": 40.709729,
+        "longitude": -74.014294,
+        "name": "Icon Pkg: Albany St, west & Washington",
+        "timestamp": "2024-01-11T23:43:22.903000Z"
+      },
+      {
+        "empty_slots": 11,
+        "extra": {
+          "address": "305-307 West 50th Street, New York, NY 10019",
+          "ebikes": 1,
+          "has_ebikes": true,
+          "postal_code": "10019",
+          "slots": 12,
+          "uid": 12
+        },
+        "free_bikes": 1,
+        "id": "aaa4ed8c7e49963e74d19459e4418312",
+        "latitude": 40.762608,
+        "longitude": -73.986576,
+        "name": "Icon Pkg:W 50 St, 8th Ave & 9th Ave",
+        "timestamp": "2024-01-11T23:43:22.877000Z"
+      }
+    ]
+  }
+}
