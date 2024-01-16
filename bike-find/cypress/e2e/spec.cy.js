@@ -1,4 +1,4 @@
-describe('template spec', () => {
+describe('Bike Find', () => {
   beforeEach(() => {
     cy.intercept("GET", "http://api.citybik.es/v2/networks/joco-new-york", {
     statusCode: 200,
