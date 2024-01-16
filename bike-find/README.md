@@ -21,7 +21,7 @@ Application uses an API to fetch information about e-bike locations in New York 
 
 ## Deployment Link
 
-![Bike Find](https://bike-find-7944rl3f0-zen-mcmillans-projects.vercel.app/)
+[Bike Find](https://bike-find-7944rl3f0-zen-mcmillans-projects.vercel.app/)
 
 ### Context:
 
